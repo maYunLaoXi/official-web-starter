@@ -1,0 +1,138 @@
+.content-1{
+  background-image: url('../../../assets/img/top3.jpg');
+}
+.content-3{
+  button{
+    box-shadow: 1px 1px 2px rgba($color: #6B798E, $alpha: 0.4);
+    border: 1px solid  rgba($color: #6B798E, $alpha: 0.1);
+    color: #6B798E;
+  }
+  .left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('../../../assets/img/ff.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+  }
+  .box-1{
+    width: 167px;
+    background-color: #CEE3FF;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 20px 20px 20px;
+    position: relative;
+
+    span{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: #2E72F4;
+      font-size: 14px;
+    }
+    button{
+      margin-bottom: 10px;
+    }
+  }
+  .box-2{
+    width: 167px;
+    button{
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .right{
+    text-align: left;
+    h4{
+      font-size: 18px;
+      color: #0A1633;
+      text-indent: 39px;
+    }
+    li{
+      font-size: 14px;
+      color: #6B798E;
+      line-height: 22px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.content-4{
+  .bg-img{
+    width: 275px;
+    height: 275px;
+    background-color: aliceblue;
+    position: relative;
+
+    span{
+      position: absolute;
+      bottom: 18px;
+      left: 18px;
+      font-size: 18px;
+      color: #FFFFFF;
+    }
+  }
+  p{
+    font-size: 14px;
+    color: #7A8BA6;
+    line-height: 24px;
+    margin-top: 20px;
+    text-align: left;
+  }
+}
+.content-5{
+  h4{
+    font-size: 18px;
+    color: #0A1633;
+    padding-bottom: 17px;
+  }
+  p{
+    font-size: 14px;
+    color: #6B798E;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+  }
+  .box-left{
+    border-right: 8px solid #F6F8FB;
+  }
+  .box-right{
+    border-left: 8px solid #F6F8FB;
+  }
+}
+.img-tch1{
+  background-image: url('../../../assets/img/tch1.jpg');
+}
+.img-tch2{
+  background-image: url('../../../assets/img/tch2.jpg');
+}
+.img-tch3{
+  background-image: url('../../../assets/img/tch3.jpg');
+}
+
+@media screen and (max-width: 767.99px) {
+  .content-tilte{
+    padding-top: 30px;
+    text-align: center;
+  }
+  .content-3{
+    .left{
+      width: 100%;
+      height: 280px;
+    }
+  }
+  .content-4{
+    .col-md-3{
+      text-align: center;
+      .bg-img{
+        display: inline-block;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+
+}

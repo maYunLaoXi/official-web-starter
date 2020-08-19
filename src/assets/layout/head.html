@@ -1,0 +1,93 @@
+<div class="main-wrap main-header">
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <img id="spin-logo" class="spin-logo" src="../img/思品logo@2x.png" alt="思品信息" style="height: 33px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li id="nav-home" class="nav-item">
+              <a class="nav-link" href="/home.html"><span data-i18n="[html]nav.home" class="nav-link-text">首页</span></a>
+            </li>
+            <li id="nav-production" class="nav-item dropdown">
+              <a dropdown-hover="hover" class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                <span data-i18n="nav.production" class="nav-link-text">产品中心</span>
+              </a>
+              <ul class="dropdown-menu hover-menu clearfix production-menu flex-row-center-around pt-40">
+                <li>
+                  <ul>
+                    <li class="title">基础服务软件产品</li>
+                    <li><a href="/productions/eos.html">EOS开发平台</a></li>
+                    <li><a href="/productions/bps.html">BPS流程平台</a></li>
+                    <li><a href="">金格电子签章</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li class="title">腾讯企业软件产品</li>
+                    <li><a href="/productions/email-work.html">腾讯企业邮箱</a></li>
+                    <li><a href="/productions/wx-work.html">腾讯企业微信</a></li>
+                    <li><a href="/productions/tencent-hardware.html">腾讯智能硬件</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li class="title">生物特征识别产品</li>
+                    <li><a href="">人脸识别</a></li>
+                    <li><a href="">虹膜识别</a></li>
+                  </ul>
+                </li>
+                
+              </ul>
+            </li>
+            <li id="nav-sample" class="nav-item dropdown">
+              <a dropdown-hover="hover" class="nav-link" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                <span data-i18n="nav.sampleRoot" class="nav-link-text">解决方案</span>
+              </a>
+              <ul class="dropdown-menu sample-menu clearfix hover-menu flex-row-center-around pt-40">
+                <li>
+                  <ul>
+                    <li class="title">解决方案</li>
+                    <li><a href="/solutions/face-id.html">智慧网点VIP人脸识别解决方案</a></li>
+                    <li><a href="#">企业协同办公平台解决方案</a></li>
+                    <li><a href="/solutions/face-id.html">智慧办公人脸识别解决方案</a></li>
+                    <li><a href="/solutions/face-id.html">智慧网点VIP人脸识别解决方案</a></li>
+                    <li><a href="">智慧数据中心电子巡检解决方案</a></li>
+                  </ul>
+                </li>                
+              </ul>
+            </li>
+            <!-- <li id="nav-sample" class="nav-item">
+              <a data-i18n="nav.sampleRoot" class="nav-link" href="/solutions/face-id.html" tabindex="-1" aria-disabled="true">解决方案</a>
+            </li> -->
+            <li id="nav-service" class="nav-item">
+              <a class="nav-link" href="/service.html" tabindex="-1" aria-disabled="true"><span data-i18n="nav.service" class="nav-link-text">服务支持</span> </a>
+            </li>
+            <li id="nav-recruitment" class="nav-item">
+              <a class="nav-link" href="/recruitment.html" tabindex="-1" aria-disabled="true"><span data-i18n="nav.joinUs" class="nav-link-text">人才招聘</span> </a>
+            </li>
+            <li id="nav-about" class="nav-item">
+              <a  class="nav-link" href="/about.html" tabindex="-1" aria-disabled="true"><span data-i18n="nav.about" class="nav-link-text">关于我们</span> </a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a data-i18n="nav.lang" dropdown-hover="hover" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                中文
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" id="i18n-ch" href="#">中文</a>
+                <a class="dropdown-item" id="i18n-en" href="#">english</a>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+    </nav>
+  </div>
+</div>
+<script>
+  var spin = document.getElementById('spin-logo')
+  spin.addEventListener('click', function(){
+    window.location.href = window.location.origin + '/home.html'
+  }, false)
+</script>

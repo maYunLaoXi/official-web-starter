@@ -1,0 +1,6 @@
+import 'bootstrap'
+import $ from 'jquery'
+import '@/assets/js/i18next'
+import '@/assets/js/svg-icon/index.js'
+import '@/assets/css/common.scss'
+import './index.scss'

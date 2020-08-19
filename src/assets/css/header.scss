@@ -1,0 +1,98 @@
+@import './var.scss';
+
+// 注： 此处为全局样式
+
+.main-header{
+  .navbar-light .navbar-nav .nav-link{
+    color: $menu-text;
+  }
+  .navbar-light .navbar-nav .nav-link:focus{
+    color: $spin-blue2;
+    outline: none;
+  }
+  .navbar-light .navbar-nav .active > .nav-link{
+    color: $spin-blue2;
+    .nav-link-text{
+      position: relative;
+
+      &::before{
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        border-bottom: 2px solid $spin-blue2;
+        position: absolute;
+        bottom: -16px;
+        left: 0;
+      }
+    }
+  
+    &:focus{
+      color: $spin-blue2;
+      outline: none;
+    }
+
+  }
+}
+  .spin-logo{
+    cursor: pointer;
+  }
+  .hover-menu{
+    display: none;
+    align-items: flex-start;
+    
+    li{
+      list-style-type: none;
+      padding-bottom: 16px;
+    }
+    >li{
+      float: left;
+    }
+    .title{
+      text-align: left;
+      font-size: 16px;
+      color: #0A1633;
+      border-bottom: 1px solid #E1E6F0;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+    a{
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      line-height: 36px;
+    }
+    a:hover{
+      color: #142655;
+      text-decoration: none;
+    }
+  }
+  .main-header{
+    .dropdown{
+      &:hover{
+        .hover-menu{
+          display: block;
+        }
+      }
+    }
+  }
+  @media (min-width: 768.9px) {
+    .sample-menu{
+      width: 300px;
+    }
+    .production-menu{
+      width: 640px;
+      left: -180px;
+      height: 255px;
+    }
+  }
+  @media (max-width: 768px) {
+    .production-menu{
+      li{
+        width: 100%;
+      }
+      .title{
+        // text-align: center;
+      }
+    }
+  }

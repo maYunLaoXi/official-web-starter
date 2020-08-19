@@ -1,0 +1,56 @@
+.content-1{
+  background-image: url('../../../assets/img/top2.jpg');
+}
+.spin-row-2{
+  position: relative;
+
+  .text{
+    >p{
+      display: flex;
+      align-items: center;
+      img{
+        margin-right: 10px;
+        width: 30px;
+      }
+    }
+    svg{
+      margin-right: 8px;
+    }
+  }
+  &::after{
+    content: "";
+    height: 1px;
+    width: 90%;
+    display: block;
+    border-bottom: 1px solid #F6F8FB;
+    position: absolute;
+    bottom: -87px;
+  }
+}
+@each $var in (1,2,3,4) {
+  .img#{$var}{
+    background-image: url('../../../assets/img/work' + $var + '.jpg');
+    background-size: auto 384px!important;
+  }
+}
+@each $var in (1,2,3,4,5,6,7) {
+  .imgb#{$var}{
+    background-image: url('../../../assets/img/emailb' + $var + '.jpg');
+  }
+}
+@media screen and (max-width: 767.99px) {
+  .spin-row-2 .bg-img{
+    height: 337px;
+    background-size: cover!important;
+  }
+  .content-tilte{
+    padding-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .content-3{
+    .flex-column-center{
+      width: 220px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+/**
+ * scss的公共样式
+ */
+@import "~bootstrap/scss/bootstrap.scss";
+@import "./default.scss";
+@import "./footer.scss";
+@import "./utils.scss";
+@import "./spin-default.scss";
+@import "./header.scss";
+
+html,body {
+	background: #ffff;
+}
+
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+@include media-breakpoint-up(sm) {
+	.main-wrap{
+		width: 100%;
+		text-align: center;
+	
+		>div{
+			display: inline-block;
+		}
+	}
+	.content-2-bg-img{
+		height: 656px;
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+@include media-breakpoint-up(md) {
+	.main-wrap{
+		width: 100%;
+		text-align: center;
+	
+		>div{
+			display: inline-block;
+			width: 1200px;
+		}
+	}
+	.content-2-bg-img{
+		height: 656px;
+	}
+}
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+@include media-breakpoint-up(lg) {}
+
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
+@include media-breakpoint-up(xl) {
+
+}

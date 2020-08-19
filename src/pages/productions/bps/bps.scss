@@ -1,0 +1,28 @@
+.content-1{
+  background-image: url('../../../assets/img/top2.jpg');;
+}
+.spin-row-4 .flex-column-center p{
+  text-align: left;
+}
+
+.spin-row-4 .flex-column-center h2{
+  margin-bottom: 20px;
+}
+.content-3{
+  h2{
+    text-align: center;
+  }
+}
+@each $var in (1,2,3,4,5,6,7,8,9,10) {
+  .img#{$var}{
+    background-image: url('../../../assets/img/bps' + $var + '.jpg');
+  }
+}
+@media screen and (max-width: 767.99px) {
+  
+}
+@media screen and (min-width: 768px) {
+  .spin-row-4 .flex-column-center{
+    width: 260px;
+  }
+}

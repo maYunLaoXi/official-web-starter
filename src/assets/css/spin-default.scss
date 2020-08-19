@@ -1,0 +1,267 @@
+// spin default class
+p{
+  font-size: 14px;
+  color: #49576B;
+  line-height: 24px;
+}
+
+.spin-row-4,.spin-sample,.spin-row-2{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// 短行线
+.spin-sort-hr::after{
+  content: "";
+  display: inline-block;
+  width: 40px;
+  border: 2px solid #FFFFFF;
+  border-radius: 2px;
+}
+// 默认类
+.spin-bg-gray{
+  background: #F6F8FB;
+}
+.bg-1{
+  background-color: lavender;
+}
+.bg-2{
+  background-color: lavenderblush;
+}
+.bg-3{
+  background-color: lightblue;
+}
+.bg-blue{
+  background-color: #2E72F4;
+}
+.c-blue{
+  color: #2E72F4;
+}
+// 各页中的共同样式
+
+// content-1居中大行
+.spin-content-1{
+  height: 200px;
+
+  .flex{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    >div{
+      margin: auto;
+    }
+    h1{
+      font-size: 24px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+    p{
+      font-size: 14px;
+      color: #FFFFFF;
+    }
+  }
+}
+// 大标题下有一行4列
+.spin-row-4{
+  text-align: center;
+
+	.flex-column-center{
+
+		i{
+			font-size: 38px;
+		}
+		h2{
+			font-size: 22px;
+			color: #0A1633;
+			line-height: 28px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+		}
+		p{
+			color: #49576B;
+			text-align: center;
+			line-height: 24px;
+		}
+	}
+}
+
+// 一行2列图文
+.spin-row-2{
+  text-align: left;
+
+  h2{
+    font-size: 30px;
+    color: #0A1633;
+    text-align: center;
+  }
+  hr{
+    margin-top: 29px;
+    margin-bottom: 29px;
+  }
+  p{
+    font-size: 15px;
+    color: #6B798E;
+    line-height: 26px;
+  }
+  .img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .bg-img{
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 384px;
+    width: 100%;
+  }
+}
+
+// 一行3列图文，上图下文
+.spin-row-3{
+  margin-top: 80px;
+
+  .row{
+    text-align: left;
+  }
+  .img{
+    height: 216px;
+    background-color: lightskyblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  h4{
+    margin: 30px 0;
+  }
+}
+// 一行3列，带hover
+.spin-row-3-hover{
+  background: #F6F8FB;
+  
+  .box-wrap{
+    background: #ffff;
+    width: 100%;
+  }
+	.box{
+		position: relative;
+		background-repeat: no-repeat;
+		background-position: right;
+    background-color: #ffff;
+    background-size: cover;
+		
+		.hover{
+      display: none;
+      p{
+        color: #ffff;
+      }
+		}
+
+		&:hover .hover{
+			display: block;
+			text-align: left;
+			padding: 40px;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background-image: url("../img/zcyfw-fuwuneirong-line@2x.png");
+			background-size: cover;
+			background-position: -17px -98px;
+			background-color: #2E72F4;
+			opacity: 0.95;
+			top: 0;
+			left: 0;
+
+			p:nth-child(3){
+				font-size: 14px;
+				color: #FFFFFF;
+				line-height: 24px;
+			}
+		}
+	}
+	.text{
+		text-align: left;
+		margin-top: 30px;
+		h4{
+			font-size: 24px;
+			color: #0A1633;
+		}
+		p{
+			font-size: 16px;
+			color: #6B798E;
+		}
+	}
+}
+
+// 典型案例
+.spin-sample{
+  .content-tilte{
+    text-align: center;
+  }
+  .img{
+    width: 100%;
+    height: 237px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  p{
+    font-size: 18px;
+    color: #0A1633;
+    text-align: left;
+    text-indent: 1em;
+    background-color: #ffff;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+// media query
+@media screen and (max-width: 767.98px) {
+  .h-img{
+    display: none;
+  }
+  .content-tilte{
+    h2{
+      font-size: 26px!important;
+    }
+  }
+  .spin-row-4{
+    .col-sm-12{
+      padding: 30px;
+    }
+    .col-md-4:nth-child(3){
+      padding-bottom: 0;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  // content-1居中大行
+  .spin-content-1{
+    height: 456px;
+    
+    .flex{
+      h1{
+        font-size: 48px;
+      }
+      p{
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+  }
+  .spin-row-2{
+    .text{
+      width: 500px;
+    }
+    .bg-img{
+      width: 559px;
+    }
+  }
+  .spin-sample{
+    .img{
+      // width: 280px;
+    }
+  }
+}

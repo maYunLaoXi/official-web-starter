@@ -1,0 +1,74 @@
+@import '../../assets/css/var.scss';
+
+.content-1{
+  text-align: center;
+  background-image: url('../../assets/img/top4.jpg');
+}
+// content-3
+.content-3{
+  h4{
+    text-align: center;
+  }
+  .box{
+    height: 240px;
+  }
+  .box-1{
+    background-image: url('../../assets/img/service1.png');
+  }
+  .box-2{
+    background-image: url('../../assets/img/service2.jpg');
+  }
+  .box-3{
+    background-image: url('../../assets/img/service3.jpg');
+  }
+  .bottom-text{
+    height: 80px;
+    line-height: 80px;
+    font-size: 20px;
+    color: #0A1633;
+  }
+  .box:hover .hover{
+    height: 320px;
+  }
+}
+// content-4
+.content-4{
+  .box{
+    text-align: left;
+    height: 188px;
+    border: 1px solid #EAEBF4;
+  }
+}
+@each $var in (1,2,3,4) {
+
+}
+
+@media screen and (max-width: 767.99px) {
+  .content-3{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    h1{
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+  .content-4{
+    h1{
+      font-size: 2rem;
+      text-align: center;
+    }
+    .col-md-4:nth-child(2), .col-md-4:nth-child(3){
+      margin-top: 15px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .content-3{
+    .box{
+      width: 370px;
+    }
+    .box-wrap{
+      width: 370px;
+    }
+  }
+}

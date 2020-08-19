@@ -1,0 +1,40 @@
+.content-1{
+  background-image: url('../../../assets/img/top2.jpg');
+}
+.spin-row-4 .flex-column-center{
+  width: auto;
+}
+.content-2{
+  .row h2{
+    margin: 20px 0;
+  }
+}
+.img1{
+  background-image: url('../../../assets/img/eos1.jpg');
+}
+.img2{
+  background-image: url('../../../assets/img/eos2.jpg');
+}
+.img3{
+  background-image: url('../../../assets/img/eos3.jpg');
+}
+.img4{
+  background-image: url('../../../assets/img/computer.jpg');
+}
+.img5{
+  background-image: url('../../../assets/img/hand.jpg');
+}
+.img6{
+  background-image: url('../../../assets/img/VCG211101899327@2x.jpg');
+}
+
+@media screen and (max-width: 767.99px) {
+  .pt-80{
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .pt-80{
+    padding-top: 0;
+  }
+}

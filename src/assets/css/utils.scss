@@ -1,0 +1,49 @@
+$num: (5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80);
+$color: (w1: #ffff, bl: #0000,);
+
+@each $var in $num {
+  .mg-#{$var}{
+    margin: 0px + $var;
+  }
+  .mt-#{$var}{
+    margin-top: 0px + $var;
+  }
+  .mb-#{$var}{
+    margin-bottom: 0px + $var;
+  }
+  .ml-#{$var}{
+    margin-left: 0px + $var;
+  }
+  .mr-#{$var}{
+    margin-right: 0px + $var;
+  }
+  .pd-#{$var}{
+    padding: 0px + $var;
+  }
+  .pt-#{$var}{
+    padding-top: 0px + $var;
+  }
+  .pb-#{$var}{
+    padding-bottom: 0px + $var;
+  }
+  .pl-#{$var}{
+    padding-left: 0px + $var;
+  }
+  .pr-#{$var}{
+    padding-right: 0px + $var;
+  }
+}
+
+@each $key, $value in $color {
+  .bg-#{$key}{
+    background-color: $value;
+  }
+  .c-#{$key}{
+    color: $value;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mt-80{
+    margin-top: 40px;
+  }
+}

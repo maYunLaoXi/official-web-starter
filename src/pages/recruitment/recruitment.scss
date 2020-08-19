@@ -1,0 +1,253 @@
+.content-1{
+  text-align: center;
+  padding: 15px;
+}
+.box-bd{
+  background: #FFFFFF;
+  border: 1px solid #E1E6F0;
+}
+.box-bt{
+  border-top: 1px solid #E1E6F0;
+}
+
+.content-1{
+  background-image: url('../../assets/img/recruitment-top.png');
+}
+.content-2{
+  .top{
+    text-align: center;
+    font-size: 36px;
+    color: #0A1633;
+    
+    p{
+      display: inline-block;
+      font-size: 18px;
+      color: #0A1633;
+      line-height: 30px;
+      text-align: left;
+    }
+  }
+  .bottom{
+  }
+}
+.content-3{
+  h4{
+    font-size: 20px;
+    color: #0A1633;
+  }
+  p{
+    font-size: 16px;
+    color: #6B798E;
+    line-height: 30px;
+  }
+  .box{
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
+.content-4{
+  $h: 244px;
+  $w: 292px;
+
+  .img-1{
+    width: 292px;
+    background: linear-gradient(55deg, lightblue 0%, lightpink 90%);
+    height: $h;
+  }
+  .img-2{
+    width: 2 * $w + 10;
+    height: $h;
+    background: linear-gradient(55deg, lightblue 0%, lightpink 90%);
+  }
+  .img-3{
+    width: $w;
+    height: 500px;
+    background: linear-gradient(55deg, lightblue 0%, lightpink 90%);
+  }
+  .box{
+    height: 500px;
+  }
+  .img-1, .img-2, .img-3{
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img1{
+    background-image: url('../../assets/img/IMG_4358@2x.png');
+  }
+  .img2{
+    background-image: url('../../assets/img/2018-10-02\ 082523@2x\(1\).png');
+  }
+  .img3{
+    background-image: url('../../assets/img/2018-10-02\ 082523@2x.png');
+  }
+  .img4{
+    background-image: url('../../assets/img/0002@2x.png');
+  }
+  .img5{
+    background-image: url('../../assets/img/微信图片_20181012173154@2x.png');
+  }
+  .img6{
+    background-image: url('../../assets/img/7e43c1b3-182c-4244-9434-10ab954ed632@2x.png');
+  }
+}
+.content-5{
+  text-align: left;
+  h1{
+    text-align: center;
+  }
+
+  .colla{
+    padding: 25px 30px;
+    position: relative;
+
+    .icon-l{
+      position: absolute;
+      right: 14px;
+      top: 70px;
+      // transform: rotate(-90deg);
+      animation: 0.3s rotateicon 1;
+    }
+    @keyframes rotateicon {
+      from { transform: rotate(-90deg) }
+      to {
+          transform: rotate(0deg);
+          transition: all 0.6s;
+      }
+    }
+    h5{
+      font-size: 20px;
+      color: #0A1633;
+      line-height: 28px;
+    }
+    span{
+      font-size: 14px;
+      color: #6B798E;
+      line-height: 30px;
+    }
+    p{
+      margin-bottom: 5px;
+      padding-left: 1.2em;
+      text-indent: -1.2em;
+    }
+  }
+  .title{
+    padding-bottom: 25px;
+    text-align: left;
+  }
+}
+.content-6{
+  .text{
+    text-align: left;
+    h5{
+      font-size: 1rem;
+      color: #0A1633;
+    }
+    p{
+      font-size: 14px;
+      color: #6B798E;
+      line-height: 30px;
+    }
+  }
+  .flex-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .qr-code{
+    width: 130px;
+    height: 150px;
+    background-image: url('../../assets/img/spin-qrcode.png');
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767.99px) {
+  h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  h3{
+    font-size: 1.2rem;
+  }
+  .content-2{
+    padding: 0 15px;
+  }
+  .content-3{
+    .box{
+      text-align: center;
+    }
+    svg{
+      margin-bottom: 30px;
+    }
+    h1{
+      padding-top: 30px;
+    }
+    .flex-row-center-between{
+      flex-direction: column;
+    }
+  }
+  .content-4{
+    .pc{
+      display: none;
+    }
+    .m-img{
+      width: 100%;
+    }
+  }
+  .content-5{
+    padding: 0 15px;
+  }
+  .content-6{
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    .box{
+      padding: 0 15px;
+      text-align: center;
+    }
+    .flex-box{
+      flex-direction: column;
+    }
+    .qr-code{
+      display: inline-block;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content-2{
+    p{
+      width: 648px;
+    }
+  }
+  .content-3{
+    p{
+      width: 428px;
+    }
+  }
+  .content-4{
+    .mobile{
+      display: none;
+    }
+  }
+  .content-5{
+    .colla .icon-l{
+      right: 50px;
+    }
+  }
+  .content-6{
+    .box{
+      padding: 50px;
+    }
+    .text{
+      width: 366px;
+    }
+    h5{
+      font-size: 18px;
+    }
+    p{
+      font-size: 16px;
+    }
+  }
+}

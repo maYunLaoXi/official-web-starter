@@ -1,0 +1,98 @@
+// 默认类，
+
+.ma-top-10{
+  margin-top: 10px;
+}
+.ma-top-20{
+  margin-top: 20px;
+}
+.ma-top-30{
+  margin-top: 30px;
+}
+.ma-top-40{
+  margin-top: 40px;
+}
+.ma-top-50{
+  margin-top: 50px;
+}
+// flex 布局类全写在这
+$flex: (flex, row, center, between);
+@each $flex, $direction, $items, $content in 
+(flex, row, center, between),
+(flex, row, center, around),
+(flex, column, center, between),
+(flex, column, flex-start, between)
+{
+  .#{$flex}-#{$direction}-#{$items}-#{$content}{
+    width: 100%;
+    display: $flex;
+    flex-direction: $direction;
+    align-items: $items;
+    justify-content: space- + $content;
+  }
+}
+.flex-row-center-end{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+.ta-c{
+  text-align: center;
+}
+.bg-no-re-cover{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-w{
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.f-l{
+  float: left;
+}
+.f-r{
+  float: right;
+}
+.h-100{
+  height: 100%;
+}
+.w-100{
+  width: 100%;
+}
+
+// 5列布局
+.col-xs-1-5,
+.col-sm-1-5,
+.col-md-1-5,
+.col-lg-1-5 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-1-5 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+    .col-sm-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-1-5 {
+        width: 20%;
+        float: left;
+    }
+}

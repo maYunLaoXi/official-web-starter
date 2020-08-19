@@ -1,0 +1,248 @@
+.content-1{
+	background-image: url('../../assets/img/位图\ +\ 位图\ 蒙版\(1\).png');
+}
+// content-2
+.content-2{
+	h1{
+		font-size: 36px;
+		color: #0A1633;
+	}
+	p{
+		font-size: 16px;
+		color: #0A1633;
+		line-height: 30px;
+		text-align: left;
+		text-indent: 1.2em;
+	}
+	.box{
+		height: 374px;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		h3{
+			margin-top: 65px;
+			font-size: 24px;
+		}
+		p{
+			color: #ffff;
+			text-align: left;
+			text-indent: 0;
+			opacity: 0.8;
+			font-size: 16px;
+		}
+	}
+	.box-1{
+		background-image: url('../../assets/img/编组.png');
+	}
+	.box-2{
+		background-image: url('../../assets/img/编组 15.png');
+	}
+	.box-3{
+		background-image: url('../../assets/img/编组 16.png');
+	}
+	.box-4{
+		background-image: url('../../assets/img/编组 17.png');
+	}
+}
+// content-3
+.content-3{
+	.box{
+		height: 230px;
+	}
+	.box-1{
+		background-image: url('../../assets/img/位图\(21\).png');
+	}
+	.box-2{
+		background-image: url('../../assets/img/位图\(18\).png');
+	}
+	.box-3{
+		background-image: url('../../assets/img/位图\(19\).png');
+	}
+}
+// content-4
+.content-4{
+	.img{
+		width: 100%;
+		height: 400px;
+		background-image: url("../../assets/img/位图@2x\(20\).png");
+		background-size: cover;
+	}
+	
+	.right{	
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+		div{
+			margin-top: 20px;
+		}
+	}
+	.card{
+		width: 311px;
+		height: 123px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		img{
+			width: 60px;
+		}
+		span{
+			font-size: 16px;
+			color: #363F4E;
+		}
+	}
+	.right::after{
+		content: '';
+		width: 311px;
+		border: 1px solid stansparent;
+	}
+}
+// content-5
+.content-5{
+	background: #F6F8FB;
+
+	.col-md-3:nth-child(1){
+		p{
+			text-align: left;
+		}
+	}
+	.box{
+		height: 288px;
+		background-color: #ffff;
+	}
+	i{
+		font-size: 40px;
+	}
+	h4{
+		font-size: 20px;
+		color: #0A1633;
+	}
+	p{
+		font-size: 16px;
+		color: #6B798E;
+	}
+}
+// content-6
+.content-6{
+	overflow: hidden;
+	background-image: url('../../assets/img/蒙版.png');
+	height: 560px;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	p{
+		color: #ffff;
+		margin-top: 20px;
+	}
+	.time-progress{
+		position: relative;
+		height: 100%;
+	}
+	.box-wrap{
+		position: absolute;
+		top: 0;
+		left: 0;
+		>div{
+			display: flex;
+			flex-direction: row;
+		}
+	}
+	.box{
+		width: 375px;
+		background-image: url("../../assets/img/编组\ 10@2x\(9\).png");
+		background-repeat: no-repeat;
+		background-size: 100% 12px;
+		text-align: left;
+		padding-top: 40px;
+		padding-right: 80px;
+		margin-right: 5px;
+	}
+	.about-btn{
+		position: absolute;
+		left: 0;
+		bottom: -100px;
+		i{
+			font-size: 15px;
+		}
+		span{
+			border-radius: 50%;
+			background: rgba($color: #D8D8D8, $alpha: 0.3);
+			line-height: 33px;
+			width: 33px;
+			height: 33px;
+			display: inline-block;
+			text-align: center;
+		}
+		span:hover{
+			background: rgba($color: #D8D8D8, $alpha: .7);
+
+		}
+	}
+}
+
+@media screen and (max-width: 767.99px) {
+	h1{
+		font-size: 2rem;
+		text-align: center;
+	}
+	.content-2{
+		.about-text{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.box{
+			margin-top: 20px;
+		}
+	}
+	.content-3{
+		h1{
+			padding-top: 30px;
+		}
+		.col-sm-12{
+			margin-top: 15px;
+		}
+	}
+	.content-4{
+		.card{
+			margin-top: 20px;
+		}
+	}
+	.content-5{
+		h1{
+			padding-top: 40px;
+			margin-bottom: 40px;
+		}
+		.box{
+			margin-top: 15px;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.content-2{
+		.box{
+			width: 287px;
+		}
+	}
+	.content-3{
+		.box{
+			width: 364px;
+		}
+	}
+	.content-4{
+		.img{
+			height: 550px;
+		}
+		.card:nth-child(1),.card:nth-child(2){
+			margin-top: 0;
+		}
+	}
+	.content-5{
+		.box{
+			width: 288px;
+		}
+	}
+}
