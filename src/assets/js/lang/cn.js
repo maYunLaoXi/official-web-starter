@@ -4,7 +4,7 @@ export default  {
       placeholder: "请输入"
     },
     home: {
-      name: '思品信息',
+      name: 'DAN',
       content1: {
         title1: '智慧办公人脸通行解决方案'
       }

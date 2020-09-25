@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   dev: {
-    port: 3000,
+    port: 8088,
     autoOpenBrower: false,
     host: '0.0.0.0',
     overlay: { warnings: false, errors: true },
